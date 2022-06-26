@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>LucentMC Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1>Contact Us</h1>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name">
+            <small class="error"></small>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Your Email">
+            <small class="error"></small>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Message" rows="4"></textarea>
+            <small class="error"></small>
+
+            <div class="center">
+                <input type="submit" value="Send Message">
+                <p id="success"></p>
+                <p>Contact Page Proudly Coded by Diamonds</p>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
