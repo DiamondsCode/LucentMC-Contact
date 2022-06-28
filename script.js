@@ -28,8 +28,8 @@ function validateForm(){
             SecureToken : "YOUR TOKEN HERE",
             To : 'RECEIVING EMAIL HERE',
             From : 'DELIVERING EMAIL HERE',
-            Subject : email.value,
-            Body : message.value
+            Subject : nameInput.value,
+            Body : 'Message: '+message.value+'<br><br>'+'Email: '+email.value
         }).then(
           message => alert(message)
         );
